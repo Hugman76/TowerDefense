@@ -14,7 +14,7 @@ public class TowerDefense implements ModInitializer {
     public static final Logger LOGGER = LogManager.getLogger(ID);
 
     public static final GameType<TowerDefenseConfig> TYPE = GameType.register(
-            new Identifier(ID, "tower_defense"),
+            new Identifier(ID, "survival"),
             TowerDefenseWaiting::open,
             TowerDefenseConfig.CODEC
     );

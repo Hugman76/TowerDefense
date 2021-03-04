@@ -29,7 +29,7 @@ public class TowerDefenseStageManager {
 
     public void onOpen(long time, TowerDefenseConfig config) {
         this.startTime = time - (time % 20) + (4 * 20) + 19;
-        this.finishTime = this.startTime + (config.timeLimitSecs * 20);
+        this.finishTime = this.startTime + (config.timeLimit * 20L);
     }
 
     public IdleTickResult tick(long time, GameSpace space) {

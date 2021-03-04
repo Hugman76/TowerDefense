@@ -1,8 +1,11 @@
 package com.hugman.tower_defense.game;
 
+import com.hugman.tower_defense.custom.BalloonEntity;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.math.BlockPos;
 import xyz.nucleoid.plasmid.game.GameSpace;
 import xyz.nucleoid.plasmid.game.event.*;
 import xyz.nucleoid.plasmid.game.player.JoinResult;
@@ -91,6 +94,9 @@ public class TowerDefenseActive {
             ref.ifOnline(world, this::spawnParticipant);
         }
         this.stageManager.onOpen(world.getTime(), this.config);
+
+        BalloonEntity balloonEntity = new BalloonEntity(world, new BlockPos(0, 68, 0), Blocks.RED_CONCRETE.getDefaultState());
+        world.spawnEntity(balloonEntity);
         // TODO setup logic
     }
 
@@ -149,7 +155,7 @@ public class TowerDefenseActive {
                 return;
         }
 
-        this.timerBar.update(this.stageManager.finishTime - time, this.config.timeLimitSecs * 20);
+        this.timerBar.update(this.stageManager.finishTime - time, this.config.timeLimit * 20);
 
         // TODO tick logic
     }

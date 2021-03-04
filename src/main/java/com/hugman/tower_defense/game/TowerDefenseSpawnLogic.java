@@ -25,14 +25,6 @@ public class TowerDefenseSpawnLogic {
         player.setGameMode(gameMode);
         player.setVelocity(Vec3d.ZERO);
         player.fallDistance = 0.0f;
-
-        player.addStatusEffect(new StatusEffectInstance(
-                StatusEffects.NIGHT_VISION,
-                20 * 60 * 60,
-                1,
-                true,
-                false
-        ));
     }
 
     public void spawnPlayer(ServerPlayerEntity player) {
