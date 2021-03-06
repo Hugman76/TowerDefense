@@ -1,0 +1,12 @@
+{
+	"spawns": [
+		{
+			"spawn_time": 0,
+			"name": "tower_defense:red"
+		},
+		{
+			"spawn_time": 10,
+			"name": "tower_defense:red"
+		}
+	]
+}

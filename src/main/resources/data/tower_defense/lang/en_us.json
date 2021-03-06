@@ -1,3 +1,4 @@
 {
-  "game.tower_defense.tower_defense": "Tower Defense"
+	"game.tower_defense.tower_defense": "Tower Defense",
+	"entity.tower_defense.balloon.red": "Red Balloon"
 }

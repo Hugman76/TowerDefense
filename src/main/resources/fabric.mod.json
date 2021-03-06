@@ -1,23 +1,23 @@
 {
-  "schemaVersion": 1,
-  "id": "tower_defense",
-  "version": "${version}",
-  "name": "Tower Defense",
-  "description": "Tower Defense minigame!",
-  "authors": [
-    "Hugman"
-  ],
-  "license": "MIT",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "com.hugman.tower_defense.TowerDefense"
-    ]
-  },
-  "depends": {
-    "fabricloader": ">=0.9.1",
-    "fabric": "*",
-    "minecraft": "1.16.4",
-    "plasmid": "0.4.x"
-  }
+	"schemaVersion": 1,
+	"id": "tower_defense",
+	"version": "${version}",
+	"name": "Tower Defense",
+	"description": "Tower Defense minigame!",
+	"authors": [
+		"Hugman"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hugman.tower_defense.TowerDefense"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.9.1",
+		"fabric": "*",
+		"minecraft": "1.16.4",
+		"plasmid": "0.4.x"
+	}
 }
