@@ -96,6 +96,8 @@ public class TowerDefenseActive {
         this.stageManager.onOpen(world.getTime(), this.config);
 
         BalloonEntity balloonEntity = new BalloonEntity(world, new BlockPos(0, 68, 0), Blocks.RED_CONCRETE.getDefaultState());
+        balloonEntity.setTarget(new BlockPos(-5, 65, -5));
+        balloonEntity.setSpeed(3);
         world.spawnEntity(balloonEntity);
         // TODO setup logic
     }
@@ -155,7 +157,7 @@ public class TowerDefenseActive {
                 return;
         }
 
-        this.timerBar.update(this.stageManager.finishTime - time, this.config.timeLimit * 20);
+        this.timerBar.update(this.stageManager.finishTime - time, this.config.timeLimit * 20L);
 
         // TODO tick logic
     }
